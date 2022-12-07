@@ -1,4 +1,8 @@
 package com.java.generics;
+/**
+ * imports the scanner class of the java.util package
+ */
+import java.util.Scanner;
 
 /**
  * Class to create MaximumIntegerNumber with different methods
@@ -24,6 +28,14 @@ public class MaximumIntegerNumber {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Welcome to the Genarics Program");
-		System.out.println("The max Number Among 3 numbers is: " + maximumNumberInteger(93, 26, 43));
+		System.out.println("Enter  the Three Number");
+		/*
+		 * Taking user input using Scanner object
+		 */
+		Scanner input = new Scanner(System.in);
+		int number1 =input.nextInt();
+		int number2 =input.nextInt();
+		int number3 =input.nextInt();
+		System.out.println("The max Number Among 3 numbers is: " + maximumNumberInteger(number1, number2, number3));
 	}
 }
