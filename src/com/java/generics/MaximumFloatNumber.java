@@ -1,11 +1,17 @@
 package com.java.generics;
 /**
+ * imports the scanner class of the java.util package
+ */
+import java.util.Scanner;
+
+/**
  * Class to create MaximumIntegerNumber with different methods
  */
 public class MaximumFloatNumber {
 	/*
-	 * Method Name:maximumNumberInteger logic for checking the Maximum Number given
-	 * among three Integer value
+	 * Method Name:maximumNumberInteger 
+	 * logic for checking the Maximum Number given
+	 * among three Float value
 	 */
 	public static Float maximumFloatNumber(Float number1, Float number2, Float number3) {
 		Float maximum = number1;
@@ -23,6 +29,14 @@ public class MaximumFloatNumber {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Welcome to the Genarics Program");
-		System.out.println("The Maximum Number Among 3 numbers is: " + maximumFloatNumber(186.45f,86.23f, 58.43f));
+		System.out.println("Enter  the Three Number");
+		/*
+		 * Taking user input using Scanner object
+		 */
+		Scanner input = new Scanner(System.in);
+		float number1 = input.nextFloat();
+		float number2 = input.nextFloat();
+		float number3 = input.nextFloat();
+		System.out.println("The max Number Among 3 numbers is: " + maximumFloatNumber(number1, number2, number3));
 	}
 }
