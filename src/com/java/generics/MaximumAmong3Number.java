@@ -8,6 +8,15 @@ class MaximumAmong3Number<T> {
 	 */
 	T number1, number2, number3;
 	/*
+	 * Parameterized constructor
+	 */
+	public MaximumAmong3Number(T number1, T number2, T number3) {
+		
+		this.number1 = number1;
+		this.number2 = number2;
+		this.number3 = number3;
+	}
+	/*
 	 * Method Name:MaximumAmongThreeNumber
 	 * Logic for checking the maximum Number For given value.
 	 */
