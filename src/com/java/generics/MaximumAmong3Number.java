@@ -34,6 +34,12 @@ class MaximumAmong3Number<T> {
 			maximum = number4;
 		return maximum;
 	}
+	/*
+	 * 
+	 */
+	public static <E> void printMaximum(E number1, E number2, E number3, E number4, E maximum) {
+		System.out.println(maximum);
+	}
 	public static void main(String[] args) {
 		/*
 		 * Program execution starts from main method
