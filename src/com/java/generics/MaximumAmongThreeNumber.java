@@ -8,6 +8,15 @@ public class MaximumAmongThreeNumber <T>{
 	 */
 	T number1, number2, number3;
 	/*
+	 * Parameterized constructor
+	 */
+	public MaximumAmongThreeNumber(T number1, T number2, T number3){
+		
+		this.number1 = number1;
+		this.number2 = number2;
+		this.number3 = number3;
+	}
+	/*
 	 * Method Name:MaximumAmongThreeNumber
 	 * Logic for checking the maximum Number For given value.
 	 */
@@ -30,5 +39,4 @@ public class MaximumAmongThreeNumber <T>{
 		System.out.println("The maximum Number Among 3 Float numbers is: "+maxAmong3Number(32.5f,56.98f,78.99f));
 		System.out.println("The maximum Number Among 3 String numbers is: "+maxAmong3Number("Apple", "Dragonfruit", "Banana"));
 	}
-
 }
