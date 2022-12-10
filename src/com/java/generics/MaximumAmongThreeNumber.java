@@ -34,6 +34,12 @@ public class MaximumAmongThreeNumber <T>{
 			maximum = number4;
 		return maximum;
 	}
+	/*
+	 * 
+	 */
+	public static <E> void printMaximum(E number1, E number2, E number3, E number4, E maximum) {
+		System.out.println(maximum);
+	}
 	public static void main(String[] args) {
 		/*
 		 * Program execution starts from main method
@@ -42,4 +48,5 @@ public class MaximumAmongThreeNumber <T>{
 		System.out.println("The maximum Number Among 3 Float numbers is: "+maximumAmong3Number(32.5f,56.98f,78.99f,65.23f));
 		System.out.println("The maximum Number Among 3 String numbers is: "+maximumAmong3Number("Apple", "Dragonfruit", "Banana", "Grapes"));
 	}
+
 }
